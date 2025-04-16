@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@apartmentapp/types": ["packages/types"]
+        }
+    }
+}

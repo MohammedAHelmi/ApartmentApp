@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/src/server.js",
+    "docker-start": "node src/server.js",
+    "migrate": "node-pg-migrate --tsconfig tsconfig.json",
+    "docker-migrate": "node-pg-migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mohammed Abdallah",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/pg": "^8.11.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/postgres": "^6.0.2",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.2.2",
+    "node-pg-migrate": "^7.9.1",
+    "pg": "^8.14.1"
+  }
+}
