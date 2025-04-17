@@ -5,7 +5,7 @@ function whereBuilder(filters: Filter[], paramsOffset: number = 1): [string, any
     const values: any[] = [];
     
     for(const filter of filters){
-        conditions.push(`${filter.column} ${filter.comparator} $${paramsOffset++}`);
+        conditions.push(`${filter.column}::TEXT ${filter.comparator} $${paramsOffset++}`);
         values.push(filter.value);
     }
 

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "workspaces": ["apps/fronted", "apps/backend", "packages/*"],
+  "workspaces": ["apps/backend", "packages/*"],
   "name": "apartmentapp",
   "version": "1.0.0",
   "scripts": {},

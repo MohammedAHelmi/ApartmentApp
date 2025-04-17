@@ -10,7 +10,7 @@ export default function ErrorComponent({ message, code } : { message: string, co
                     <h2 className="text-2xl font-semibold">{code ?? "Something went wrong"}</h2>
                     <p className="mt-2 text-xl text-gray-500">{message}</p>
                 </div>
-                <Link href="/" className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 ">
+                <Link href="/" className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                     <span>Home</span>
                 </Link>
             </div>

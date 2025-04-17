@@ -21,9 +21,6 @@ export default function HomePage() {
     const pathname = usePathname(); 
 
     const handleSearch = function(term: string) {
-        if(term === '')
-            return;
-
         router.push(`${pathname}?term=${encodeURIComponent(term)}`);
         setQueryString(`term=${encodeURIComponent(term)}`);
     }

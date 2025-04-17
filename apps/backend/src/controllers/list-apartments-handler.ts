@@ -13,7 +13,7 @@ type ApartmentQuery = {
   };
 
 /**
- * The function uses the query string to build condition to send to database on the rows returned
+ * The function uses the query string to build conditions to send to database on the rows returned
  * The condition are of DALOptions type which specifies filter, limit and of results, order column of results, order direction
  * A search filter is simply the column to search in, database comparator (<=, >=, ILIKE) and the term to search for
  * This logic is particularly useful because we can create multiple DALOptions object each has its own search filter which allows us to search in more than one column and then combine the results
